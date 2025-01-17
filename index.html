@@ -8,12 +8,16 @@
   </head>
   <body>
     <div class="wrapper">
-
       <header>
         <nav class="navbar">
           <div class="site-logo">
             <h1>Logo</h1>
           </div>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="main-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -23,16 +27,14 @@
         </nav>
       </header>
 
-
       <main>
- 
         <section class="hero-section">
           <div class="hero-content">
             <div class="hero-left">
               <h2>Welcome to Our Website</h2>
               <p>
-                This is the hero section with the biggest and boldest text to grab
-                attention.
+                This is the hero section with the biggest and boldest text to
+                grab attention.
               </p>
               <button class="hero-btn">Sign Up</button>
             </div>
@@ -42,29 +44,35 @@
           </div>
         </section>
 
-
         <section class="testimonials-section">
           <h2>What Our Clients Say</h2>
           <div class="testimonials-container">
             <article class="testimonial-card">
               <img src="placeholder.png" alt="Client Photo" />
-              <div class="testimonial-card-content">some info</div>
+              <div class="testimonial-card-content">
+                <p>Client testimonial goes here. They loved our service!</p>
+              </div>
             </article>
             <article class="testimonial-card">
               <img src="placeholder.png" alt="Client Photo" />
-              <div class="testimonial-card-content">some info</div>
+              <div class="testimonial-card-content">
+                <p>Another happy client sharing their experience.</p>
+              </div>
             </article>
             <article class="testimonial-card">
               <img src="placeholder.png" alt="Client Photo" />
-              <div class="testimonial-card-content">some info</div>
+              <div class="testimonial-card-content">
+                <p>Yet another satisfied customer testimonial.</p>
+              </div>
             </article>
             <article class="testimonial-card">
               <img src="placeholder.png" alt="Client Photo" />
-              <div class="testimonial-card-content">some info</div>
+              <div class="testimonial-card-content">
+                <p>One more glowing review from our clients.</p>
+              </div>
             </article>
           </div>
         </section>
-
 
         <section class="quote-section">
           <blockquote>
@@ -78,7 +86,6 @@
           <p class="quote-author">Author</p>
         </section>
 
-
         <section class="call-to-action">
           <div class="call-to-action-content">
             <h3>Take Action Now</h3>
@@ -88,10 +95,13 @@
         </section>
       </main>
 
-
       <footer>
-        <p>&copy; 2024 Your Website. All rights reserved.</p>
+        <p>
+          &copy; <span id="current-year"></span> Your Website. All rights
+          reserved.
+        </p>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
